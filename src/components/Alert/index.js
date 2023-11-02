@@ -9,15 +9,17 @@ const alert = {
             info(args) {
                 const {title, content, fn} = args;
                 setAlertContext(
-                    <div className='alert-container'>
-                        {title && <h3 className='alert-title'>{title}</h3>}
-                        {content && <p className='alert-content'>{content}</p>}
-                        <button onClick={
-                            () => {
-                                fn();
-                                alertApi.close();
-                            }
-                        } className='alert-button-confirm'>确定</button>
+                    <div className='lhq-alert-shroud'>
+                        <div className='lhq-alert-container'>
+                            {title && <h3 className='lhq-alert-title'>{title}</h3>}
+                            {content && <p className='lhq-alert-content'>{content}</p>}
+                            <button onClick={
+                                () => {
+                                    fn && fn();
+                                    alertApi.close();
+                                }
+                            } className='lhq-alert-button-confirm'>确定</button>
+                        </div>
                     </div>
                 );
             },

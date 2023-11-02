@@ -1,15 +1,15 @@
-.toast-container {
+.lhq-toast-container {
     position: fixed;
     left: 50vw;
     transform: translate(-50%, 0);
     transition: top .8s;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: 0px 0px 0.5em #000;
     border-radius: 0.5em;
     padding: 0.5em 1em;
     margin: 0;
     background-color: white;
 }
-.toast-container .toast-content {
+.lhq-toast-container .lhq-toast-content {
     padding: 0;
     margin: 0;
 }

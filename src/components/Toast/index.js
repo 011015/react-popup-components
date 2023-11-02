@@ -10,8 +10,8 @@ function NewToast({content}) {
         }, 2000);
     }, []);
     return (
-        <div className='toast-container' style={{top}}>
-            {content && <p className='toast-content'>{content}</p>}
+        <div className='lhq-toast-container' style={{top}}>
+            {content && <p className='lhq-toast-content'>{content}</p>}
         </div>
     )
 }

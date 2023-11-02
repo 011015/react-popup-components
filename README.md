@@ -7,9 +7,17 @@
 ![language](https://img.shields.io/github/languages/top/011015/react-popup-components)
 ![last](https://img.shields.io/github/last-commit/011015/react-popup-components)
 
+<a href="https://011015.github.io/react-popup-components/" target="_blank">在线体验</a>
+
 </div>
 
-### Alert
+## 安装
+
+`npm install react-popup-components`
+
+注意：必须先安装 react 框架，`npm install react`
+
+## Alert
 
 #### 代码演示
 
@@ -56,7 +64,7 @@ export default Test
 
 - `alert.close()`（默认点击确认后会关闭）
 
-### Confirm
+## Confirm
 
 #### 代码演示
 
@@ -102,7 +110,7 @@ export default Test
 
 - `confirm.close()`（默认点击确认后会关闭）
 
-### Toast
+## Toast
 
 #### 代码演示
 
@@ -133,5 +141,3 @@ export default Test
 | 参数    | 说明     | 类型   | 默认值 |
 | ------- | -------- | ------ | ------ |
 | content | 提示内容 | string | -      |
-
-#####

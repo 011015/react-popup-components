@@ -1,7 +1,7 @@
 <div align="center">
 <h1 align="center">react-popup-components</h1>
 
-一款仅支持react框架使用的弹窗组件库
+一款仅支持 react 框架使用的弹窗组件库
 
 ![license](https://img.shields.io/github/license/011015/react-popup-components)
 ![language](https://img.shields.io/github/languages/top/011015/react-popup-components)
@@ -35,6 +35,7 @@ function Test() {
         </>
     );
 }
+export default Test
 ```
 
 #### API
@@ -80,6 +81,7 @@ function Test() {
         </>
     );
 }
+export default Test
 ```
 
 #### API
@@ -119,6 +121,7 @@ function Test() {
         </>
     );
 }
+export default Test
 ```
 
 #### API
@@ -131,4 +134,4 @@ function Test() {
 | ------- | -------- | ------ | ------ |
 | content | 提示内容 | string | -      |
 
-##### 
+#####

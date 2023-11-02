@@ -33,7 +33,7 @@ function App() {
         <div className="container">
             <div className="title">
                 <h1>react-popup-components</h1>
-                <h3>一款仅支持 react 框架使用的弹窗组件库</h3>
+                <h3>一款 React 弹窗组件库</h3>
                 <p>欢迎来到在线体验！</p>
             </div>
             <div className="main">

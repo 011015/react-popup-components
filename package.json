@@ -1,7 +1,7 @@
 {
   "name": "react-popup-components",
   "version": "1.0.1",
-  "description": "",
+  "description": "A React pop-up component library",
   "main": "dist/index.min.js",
   "scripts": {
     "experience": "webpack --mode=production --config webpack.dev.js",
@@ -19,11 +19,12 @@
     "toast",
     "confirm"
   ],
-  "author": "lllhq",
+  "author": "lhq",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/011015/react-popup-components/issues"
   },
+  "homepage": "https://011015.github.io/react-popup-components/index.html",
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",

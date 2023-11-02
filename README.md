@@ -1,13 +1,13 @@
 <div align="center">
 <h1 align="center">react-popup-components</h1>
 
-一款仅支持 react 框架使用的弹窗组件库
+一款 React 弹窗组件库
 
 ![license](https://img.shields.io/github/license/011015/react-popup-components)
 ![language](https://img.shields.io/github/languages/top/011015/react-popup-components)
 ![last](https://img.shields.io/github/last-commit/011015/react-popup-components)
 
-<a href="https://011015.github.io/react-popup-components/" target="_blank">在线体验</a>
+<a href="https://011015.github.io/react-popup-components/index.html" target="_blank">在线体验</a>
 
 </div>
 

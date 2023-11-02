@@ -15,7 +15,7 @@
 
 `npm install react-popup-components`
 
-注意：必须先安装 react 框架，`npm install react`
+注意：必须先安装 React ，`npm install react`
 
 ## Alert
 
@@ -30,7 +30,6 @@ function Test() {
             title: 'title',
             content: 'content',
             fn() {
-                console.log('abc');
                 alertApi.close();
             }
         });
@@ -50,7 +49,7 @@ export default Test
 
 ##### 传递信息方法
 
-- `alert.info(config)`
+- `alertApi.info(config)`
 
 `config`对象属性如下：
 
@@ -62,7 +61,7 @@ export default Test
 
 ##### 关闭窗口方法
 
-- `alert.close()`（默认点击确认后会关闭）
+- `alertApi.close()`（默认点击确认后会关闭）
 
 ## Confirm
 
@@ -96,7 +95,7 @@ export default Test
 
 ##### 传递信息方法
 
-- `confirm.info(config)`
+- `confirmApi.info(config)`
 
 `config`对象属性如下：
 
@@ -108,7 +107,7 @@ export default Test
 
 ##### 关闭窗口方法
 
-- `confirm.close()`（默认点击确认后会关闭）
+- `confirmApi.close()`（默认点击确认后会关闭）
 
 ## Toast
 
@@ -136,8 +135,9 @@ export default Test
 
 ##### 传递信息方法
 
-- `toast.info(content)`
+- `toastApi.info(content)`
 
 | 参数    | 说明     | 类型   | 默认值 |
 | ------- | -------- | ------ | ------ |
 | content | 提示内容 | string | -      |
+

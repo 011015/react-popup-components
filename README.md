@@ -1,8 +1,8 @@
 <div align="center">
 <h1 align="center">react-popup-components</h1>
-
 一款 React 弹窗组件库
 
+![npm](https://img.shields.io/npm/v/react-popup-components)
 ![license](https://img.shields.io/github/license/011015/react-popup-components)
 ![language](https://img.shields.io/github/languages/top/011015/react-popup-components)
 ![last](https://img.shields.io/github/last-commit/011015/react-popup-components)
@@ -140,4 +140,3 @@ export default Test
 | 参数    | 说明     | 类型   | 默认值 |
 | ------- | -------- | ------ | ------ |
 | content | 提示内容 | string | -      |
-

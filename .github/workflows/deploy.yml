@@ -23,9 +23,9 @@ jobs:
       - name: Build
         run: npm run experience
       - name: Deploy github pages
-        uses: peaceiris/actions-gh-pages@v3.9.3
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
-          github_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./experience
-          publish_branch: gh-pages
-          full_commit_message: ${{ github.event.head_commit.message }}
+          ACCESS_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
+          CLEAN: true

@@ -24,7 +24,12 @@
   "bugs": {
     "url": "https://github.com/011015/react-popup-components/issues"
   },
-  "homepage": "https://011015.github.io/react-popup-components/index.html",
+  "homepage": "https://011015.github.io/react-popup-components",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",

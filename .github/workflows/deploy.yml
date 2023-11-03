@@ -25,7 +25,7 @@ jobs:
       - name: Deploy github pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
-          ACCESS_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist
-          CLEAN: true
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          branch: gh-pages
+          folder: experience
+          clean: true

@@ -1,2 +1,5 @@
-/node_modules
+/dist
 /experience
+/node_modules
+index.html
+package-lock.json

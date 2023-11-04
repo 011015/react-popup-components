@@ -1,6 +1,6 @@
 import React from "react"
 
-import {alert, confirm, toast} from "../dist/index.min.js"
+import {alert, confirm, toast} from "./components"
 import './index.css'
 // import {alert, confirm, toast} from "@components"
 

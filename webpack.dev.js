@@ -18,7 +18,7 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'public/index.html'),
-            filename: path.resolve(__dirname, './index.html')
+            filename: path.resolve(__dirname, 'experience/index.html')
         }),
         new MiniCssExtractPlugin({
             filename: './index.css'

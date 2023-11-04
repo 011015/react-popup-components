@@ -5,7 +5,8 @@ name: Deploy Github Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   update-github-pages:
@@ -16,14 +17,13 @@ jobs:
         uses: actions/checkout@v3
         with:
           persist-credentials: false
-      - name: Install
-        run: npm install
-      - name: Build
-        run: npm run experience
+      - name: Install and Build
+        run: |
+          npm install
+          npm run experience
       - name: Deploy github pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           branch: gh-pages
           folder: experience
-          clean: true

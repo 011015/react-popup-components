@@ -1,0 +1,2 @@
+.container{margin:5em auto;width:65vw}.container .title{padding:1em 0;text-align:center}.main{margin:0 auto;width:50vw}.alert,.confirm,.main,.toast{display:flex;flex-direction:column}.alert,.confirm,.toast{margin:.5em 0}.alert-title,.confirm-title,.toast-title{font-size:24px;margin:.5em}.alert-button,.confirm-button,.toast-button{cursor:pointer;font-size:20px;padding:.2em}
+/*# sourceMappingURL=index.css.map*/

@@ -1,8 +1,7 @@
 import React from "react"
 
-import {alert, confirm, toast} from "./components"
+import {alert, confirm, toast} from "@components"
 import './index.css'
-// import {alert, confirm, toast} from "@components"
 
 function App() {
     const [alertApi, alertContext] = alert.useMessage();

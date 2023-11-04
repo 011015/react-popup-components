@@ -1,0 +1,44 @@
+.lhq-alert-shroud {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.lhq-alert-container {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 0.75em 2.5em;
+    max-width: 550px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.lhq-alert-title, .lhq-alert-content, .lhq-alert-button-confirm {
+    margin: 0.35em 0;
+}
+.lhq-alert-container .lhq-alert-button-confirm {
+    border-radius: 0.5em;
+}
+.lhq-alert-container .lhq-alert-content {
+    word-wrap: break-word;
+}
+.lhq-alert-container .lhq-alert-button-confirm {
+    color: white;
+    background-color: #18a718;
+    border: 1px solid #18a718;
+    padding: 0.25em 0.5em;
+}
+.lhq-alert-container .lhq-alert-button-confirm:hover {
+    box-shadow: 0.2em 0.3em 0.3em rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+}
+.lhq-alert-container .lhq-alert-button-confirm:active {
+    box-shadow: inset 0.2em 0.3em 0.3em rgba(0, 0, 0, 0.23);
+}

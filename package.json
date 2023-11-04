@@ -1,6 +1,6 @@
 {
   "name": "react-popup-components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React pop-up component library",
   "main": "dist/index.min.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "keywords": [
     "react",
     "popup",
+    "component",
     "alert",
     "toast",
     "confirm"

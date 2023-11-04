@@ -1,8 +1,5 @@
 /.github
-/dist
-/experience
-/node_modules
+/public
 /src
-package-lock.json
 webpack.dev.js
 webpack.prod.js

@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Check File
         run: |
-          if git diff --unified=0 ${{ github.event.before }} ${{ github.sha }} 'package.json' | grep -E "^\+.*version:*"; then
+          if git diff --unified=0 ${{ github.event.before }} ${{ github.sha }} 'package.json' | grep -E "^\+.*version:"; then
             echo "Version Changed"
           else
             echo "Version Unchanged"

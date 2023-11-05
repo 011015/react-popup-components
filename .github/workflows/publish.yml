@@ -28,15 +28,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org/
-      - name: Install and Build
-        run: |
-          npm install
-          npm run build
+          node-version: "16.x"
+          registry-url: "https://registry.npmjs.org"
       - name: Publish
         run: |
-          npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+          npm ci
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

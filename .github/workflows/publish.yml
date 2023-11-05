@@ -30,9 +30,11 @@ jobs:
         with:
           node-version: "16.x"
           cache: "npm"
-      - name: Publish
+      - name: Install and Build
         run: |
-          npm ci
-          npm publish
+          npm install
+          npm run build
+      - name: Publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}

@@ -29,8 +29,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org
-      - run: npm publish
-        env:
-          NPM_CONFIG_USERCONFIG: ./.npmrc
-          NODE_AUTH_TOKEN: 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
+      - run: Publish
+        run: |
+          npm config set registry https://registry.npmjs.org
+          npm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+          npm publish

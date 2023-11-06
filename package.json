@@ -1,6 +1,6 @@
 {
   "name": "react-popup-components",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A React pop-up component library",
   "main": "dist/index.min.js",
   "scripts": {

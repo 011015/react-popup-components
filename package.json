@@ -26,9 +26,7 @@
   },
   "homepage": "https://011015.github.io/react-popup-components",
   "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
+    "dist"
   ],
   "devDependencies": {
     "@babel/core": "^7.23.2",

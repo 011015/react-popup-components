@@ -11,25 +11,25 @@ on:
       - "package.json"
 
 jobs:
-  publish-npm:
-    name: publish npm package
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check File
-        run: |
-          if git diff --unified=0 ${{ github.event.before }} ${{ github.sha }} 'package.json' | grep -E "^\+.*version:"; then
-            echo "Version Changed"
-          else
-            echo "Version Unchanged"
-          fi
       - uses: actions/checkout@v3
-      # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org/
       - run: npm install
       - run: npm run build
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

@@ -14,6 +14,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Check if NPM_AUTH_TOKEN is set
+        run: |
+          if [ -z "${{ secrets.NPM_AUTH_TOKEN }}" ]; then
+            echo "NPM_AUTH_TOKEN is not set."
+            exit 1
+          else
+            echo "NPM_AUTH_TOKEN is set."
+          fi
+      # - name: Check File
+      #   run: |
+      #     if git diff --unified=0 ${{ github.event.before }} ${{ github.sha }} 'package.json' | grep -E "^\+.*version:"; then
+      #       echo "Version Changed"
+      #     else
+      #       echo "Version Unchanged"
+      #     fi
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -29,6 +44,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+          registry-url: https://registry.npmjs.org
       - name: Publish
         run: |
           npm config set registry https://registry.npmjs.org

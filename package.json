@@ -1,12 +1,13 @@
 {
   "name": "react-popup-components",
-  "version": "1.2.3",
+  "version": "1.2.2",
   "description": "A React pop-up component library",
   "main": "dist/index.min.js",
   "scripts": {
     "experience": "webpack --mode=production --config webpack.dev.js",
     "build": "webpack --mode=production --config webpack.prod.js",
-    "dev": "webpack-dev-server --open --mode=development --config webpack.dev.js"
+    "dev": "webpack-dev-server --open --mode=development --config webpack.dev.js",
+    "release": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",

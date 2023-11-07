@@ -51,4 +51,5 @@ jobs:
       - name: Publish
         run: npm publish
         env:
+          NPM_CONFIG_USERCONFIG: ~/.npmrc
           NODE_AUTH_TOKEN: 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

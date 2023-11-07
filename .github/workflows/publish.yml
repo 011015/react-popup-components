@@ -14,21 +14,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if NPM_TOKEN is set
-        run: |
-          if [ -z "${{ secrets.NPM_TOKEN }}" ]; then
-            echo "NPM_TOKEN is not set."
-            exit 1
-          else
-            echo "NPM_TOKEN is set."
-          fi
-      # - name: Check File
+      # - name: Check if NPM_TOKEN is set
       #   run: |
-      #     if git diff --unified=0 ${{ github.event.before }} ${{ github.sha }} 'package.json' | grep -E "^\+.*version:"; then
-      #       echo "Version Changed"
+      #     if [ -z "${{ secrets.NPM_TOKEN }}" ]; then
+      #       echo "NPM_TOKEN is not set."
+      #       exit 1
       #     else
-      #       echo "Version Unchanged"
+      #       echo "NPM_TOKEN is set."
       #     fi
+
+      # git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep 'package.json' | grep -E "^\+.*\"version\":";
+
+      - name: Check File
+        run: |
+          if git diff --unified=0 ${{ github.event.before }} ${{ github.sha }} 'package.json' | grep -E "^\+.*\"version\":"; then
+            echo "Version Changed"
+          else
+            echo "Version Unchanged"
+          fi
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -44,9 +47,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org
+          registry-url: "https://registry.npmjs.org"
       - name: Publish
-        run: |
-          npm config set registry https://registry.npmjs.org
-          npm config set //registry.npmjs.org/:_authToken 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
-          npm publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: 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

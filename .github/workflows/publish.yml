@@ -52,4 +52,4 @@ jobs:
         run: npm publish
         env:
           NPM_CONFIG_USERCONFIG: ~/.npmrc
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: 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

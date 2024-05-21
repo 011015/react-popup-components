@@ -4,7 +4,7 @@
   "description": "A React pop-up component library",
   "main": "dist/index.min.js",
   "scripts": {
-    "experience": "webpack --mode=production --config webpack.dev.js",
+    "experiment": "webpack --mode=production --config webpack.dev.js",
     "build": "webpack --mode=production --config webpack.prod.js",
     "dev": "webpack-dev-server --open --mode=development --config webpack.dev.js",
     "release": "npm run build && npm publish"

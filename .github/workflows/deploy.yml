@@ -20,10 +20,10 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm run experience
+          npm run experiment
       - name: Deploy github pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: experience
+          folder: experiment
